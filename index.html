@@ -21,8 +21,8 @@
         width: 600px;
       }
       #map {
-        width: 1500px;
-        height: 1000px;
+        width: 1200px;
+        height: 800px;
       }
     </style>
 
@@ -37,6 +37,8 @@
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 6,
           center: center,
+          fullscreenControl: true,
+          fullscreenControlOptions: true,
           mapTypeId: google.maps.MapTypeId.ROADMAP
         });
 
